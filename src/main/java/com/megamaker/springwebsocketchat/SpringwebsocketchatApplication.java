@@ -1,13 +1,11 @@
 package com.megamaker.springwebsocketchat;
 
-import com.megamaker.springwebsocketchat.config.WebSocketQueueConfig;
-import com.megamaker.springwebsocketchat.config.WebSocketTopicConfig;
+import com.megamaker.springwebsocketchat.config.WebSocketConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Import;
 
-@Import(WebSocketTopicConfig.class)
-//@Import(WebSocketQueueConfig.class)
+@Import(WebSocketConfig.class)
 @SpringBootApplication(scanBasePackages = "com.megamaker.springwebsocketchat.controller")
 public class SpringwebsocketchatApplication {
 
